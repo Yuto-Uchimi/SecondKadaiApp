@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTJ-b5-OJr">
-                                <rect key="frame" x="20" y="44" width="374" height="254"/>
+                                <rect key="frame" x="20" y="94" width="374" height="255"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMi-Vy-YbH">
                                         <rect key="frame" x="10.5" y="31" width="355.5" height="39"/>
@@ -28,18 +28,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCb-eR-4vW">
-                                        <rect key="frame" x="156" y="102" width="65" height="50"/>
+                                        <rect key="frame" x="156" y="102" width="65" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="次へ">
                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fi6-jK-3Wa"/>
-                                            <segue destination="AKw-D0-cp4" kind="show" id="wEf-Aw-gFg"/>
+                                            <segue destination="AKw-D0-cp4" kind="show" identifier="" id="5Jg-lJ-aEC"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trf-k6-oEs">
-                                        <rect key="frame" x="8" y="185" width="358" height="47"/>
+                                        <rect key="frame" x="8" y="186" width="358" height="47"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -59,10 +58,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iTJ-b5-OJr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FCv-WG-55w"/>
                             <constraint firstItem="iTJ-b5-OJr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GrL-ZL-GRO"/>
+                            <constraint firstItem="iTJ-b5-OJr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JwJ-Ag-M4b"/>
                             <constraint firstItem="iTJ-b5-OJr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XAH-FK-SJW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iTJ-b5-OJr" secondAttribute="bottom" constant="564" id="vvE-Nz-gsM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -77,7 +75,7 @@
         <!--Result View Controller-->
         <scene sceneID="XHt-OF-qaw">
             <objects>
-                <viewController id="AKw-D0-cp4" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AKw-D0-cp4" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fmv-Jg-O08">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,9 +113,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5Rr-92-MEP" firstAttribute="top" secondItem="XGn-y7-SaV" secondAttribute="top" constant="44" id="JbI-HL-c7i"/>
+                            <constraint firstItem="5Rr-92-MEP" firstAttribute="top" secondItem="XGn-y7-SaV" secondAttribute="top" constant="44" id="Rcx-Ai-laa"/>
                             <constraint firstItem="XGn-y7-SaV" firstAttribute="trailing" secondItem="5Rr-92-MEP" secondAttribute="trailing" constant="10" id="bMS-jg-4qd"/>
-                            <constraint firstItem="XGn-y7-SaV" firstAttribute="bottom" secondItem="5Rr-92-MEP" secondAttribute="bottom" constant="503" id="hYB-wd-cL2"/>
+                            <constraint firstItem="XGn-y7-SaV" firstAttribute="bottom" secondItem="5Rr-92-MEP" secondAttribute="bottom" constant="503" id="dHd-iv-QBA"/>
                             <constraint firstItem="5Rr-92-MEP" firstAttribute="leading" secondItem="fmv-Jg-O08" secondAttribute="leadingMargin" id="oMm-Oy-L2c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XGn-y7-SaV"/>

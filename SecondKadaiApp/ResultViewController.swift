@@ -9,7 +9,6 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print.text = "こんにちは、\(argString)さん"
     }
 }
